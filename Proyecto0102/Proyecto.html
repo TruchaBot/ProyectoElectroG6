@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html lang ="en">
+  <head>
+    <meta charset ="UTF-8">
+    <title>ProyectoG6</title>
+    <style type = "text/css">
+      canvas{
+          border :1px solid black;
+      }
+      body{
+        margin : 2px;
+      }
+    </style>
+    </head>
+
+    <body>
+      <canvas id = "Canvas1"> </canvas>
+      <canvas id = "Canvas2"> </canvas>
+      <div class ="slideContainer">
+        <input type = "range" min="200" max="400" value = "200" id = "DistanciaSli" class ="slider">
+        <text>Distancia entre los centros</text>
+      </div>
+      <div class ="slideContainer">
+            <input type = "range" min="0" max="10" value = "0" id = "PasosSli" class ="slider">
+            <text>Numero de cargas</text>
+      </div>
+      <div class ="slideContainer">
+        <input type = "range" min="1" max="30" value = "200" id = "Vsli" class ="slider">
+        <text>Potencial V en la esfera Izquierda</text>
+      </div>
+      <div class ="slideContainer">
+        <input type = "range" min="20" max="400" value = "200" id = "R1Sli" class ="slider">
+        <text>Radio (Izquierda)</text>
+      </div>
+      <div class ="slideContainer">
+        <input type = "range" min="20" max="400" value = "200" id = "R2Sli" class ="slider">
+        <text>Radio (Derecha)</text>
+      </div>
+      <div class ="slideContainer">
+        <input type = "range" min="1" max="3" value = "3" id = "ModeSli" class ="slider">
+        <text>Calculo de potencial(+ / - / Ambos)</text>
+      </div>
+      <script src="ProyectoScript.js"> </script>
+    </body>
+</html>
